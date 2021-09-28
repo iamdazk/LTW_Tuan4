@@ -42,7 +42,7 @@ namespace BaiTap
             foreach (var cau1 in listTeamA)
             {
                 Console.Write(cau1);
-                //Console.ReadKey();
+                Console.ReadKey();
             }
         }
     }
