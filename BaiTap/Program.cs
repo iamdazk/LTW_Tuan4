@@ -45,7 +45,6 @@ namespace BaiTap
             {
                 Console.WriteLine("Name = " + a.Name + ", Team = " + a.Team + ", Score = " + a.Score);
             }
-            wdwdwdwdwd;
 
        
         }
