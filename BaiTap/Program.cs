@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
 //Câu 1: Lấy người chơi thuộc team A và có số điểm Score >=25.
 //Câu 2: Sắp xếp tên người chơi theo số điểm Score tăng dần.
 //Câu 3: Lấy ra tên 2 người chơi có số điểm cao nhất .
@@ -36,13 +37,20 @@ namespace BaiTap
             new Player { Name = "Nhan", Team = "L", Score = 30 },
             };
             //cau 1
-            var listTeamA = from n in listPlayer
-                            where n.Team == "A"
-                            select n;
-            foreach (var cau1 in listTeamA)
+            /*var bai1 = from b1 in listPlayer
+                       where b1.Team == "A" && b1.Score >= 25
+                       select b1;
+            foreach (var a in bai1)
             {
-                Console.Write(cau1);
-                Console.ReadKey();
+                Console.WriteLine("Name =" + a.Name + ",Team =" + a.Team + ",Score =" + a.Score);
+            }*/
+            
+            var bai2 = from b2 in listPlayer
+                       orderby b2.Score
+                       select b2;
+            foreach (var a in bai2)
+            {
+                Console.WriteLine("Name = " + a.Name + ", Team = " + a.Team + ", Score = " + a.Score);
             }
         }
     }
