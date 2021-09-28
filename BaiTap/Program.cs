@@ -36,14 +36,7 @@ namespace BaiTap
             new Player { Name = "Nhung", Team = "L", Score = 30 },
             new Player { Name = "Nhan", Team = "L", Score = 30 },
             };
-            //cau 1
-            /*var bai1 = from b1 in listPlayer
-                       where b1.Team == "A" && b1.Score >= 25
-                       select b1;
-            foreach (var a in bai1)
-            {
-                Console.WriteLine("Name =" + a.Name + ",Team =" + a.Team + ",Score =" + a.Score);
-            }*/
+           
             
             var bai2 = from b2 in listPlayer
                        orderby b2.Score
@@ -52,6 +45,15 @@ namespace BaiTap
             {
                 Console.WriteLine("Name = " + a.Name + ", Team = " + a.Team + ", Score = " + a.Score);
             }
+            asdkjasd
+                a
+                sd
+                a
+                sd
+                a
+                sd
+
+
         }
     }
 }
